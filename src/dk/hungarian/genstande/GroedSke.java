@@ -17,4 +17,9 @@ public class GroedSke extends Genstand{
  public String GroedSke(){
      return "Hold dig fra min varme grød, eller du får tæsk med min GroedSke";
  }
+
+
+    public String look() {
+        return null;
+    }
 }
