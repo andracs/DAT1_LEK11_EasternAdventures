@@ -1,9 +1,10 @@
 package dk.hungarian.genstande;
 
 import dk.hungarian.Genstand;
+import dk.hungarian.interfaces.Lookable;
 
-public class Fakkel extends Genstand {
-int levetid; //Kan lyse fra 0-500 sekunder.
+public class Fakkel extends Genstand implements Lookable {
+int levetid; //Kan lyse fra 0-100 sekunder.
 
     public Fakkel(String navn, String beskrivelse, int styrke) { //Constructor fra Genstand
         super(navn, beskrivelse, styrke); //Genstand's variabler

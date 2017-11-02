@@ -64,5 +64,7 @@ public class Test {
 
         System.out.println("********** Test SLUT **********");
 
+        Vampyr vamp = new Vampyr(3);
+        System.out.println(vamp.look());
     }
 }

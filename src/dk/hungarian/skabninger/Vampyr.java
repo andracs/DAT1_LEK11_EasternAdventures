@@ -3,8 +3,9 @@ package dk.hungarian.skabninger;
 
 import dk.hungarian.Gender;
 import dk.hungarian.Skabning;
+import dk.hungarian.interfaces.Lookable;
 
-public class Vampyr extends Skabning {
+public class Vampyr extends Skabning implements Lookable {
     int hugtændersStørrelse; //Kan være mellem 10-30 cm.
 
     public Vampyr(String navn, String beskrivelse, int styrke, Gender gender) { //Constructor fra Skabning
