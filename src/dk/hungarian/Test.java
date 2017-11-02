@@ -61,6 +61,11 @@ public class Test {
         SurMor mor = new SurMor(90);
         System.out.println(mor.toString());
 
+        // Her tester vi sur mor
+        System.out.println("--> Tester Jokke B ");
+        Joachim_B_Olsen jokke = new Joachim_B_Olsen(40);
+        System.out.println(jokke.look());
+
 
         System.out.println("********** Test SLUT **********");
 
