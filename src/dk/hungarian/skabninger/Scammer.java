@@ -15,7 +15,6 @@ public class Scammer extends Skabning{
     }
 
     // Tilføjer en beskrivelse (String) til metoden look fra interface klassen.
-    @Override
     public String look() {
         String desc = "# En Scammer som udgiver sig som en 'Sexy single Russian Lady' som ønsker lidt sexy-time #";
         return desc;

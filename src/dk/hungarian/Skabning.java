@@ -2,7 +2,7 @@ package dk.hungarian;
 
 import dk.hungarian.interfaces.Lookable;
 
-public class Skabning implements Lookable {
+public class Skabning implements Cloneable {
     private String navn;
     private String beskrivelse;
     private int styrke;
