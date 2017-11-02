@@ -10,7 +10,7 @@ public class Helle_Thorning extends Skabning {
 
     // 1 arg constructor, indtast dit feministlevel og du er good to go.
     public Helle_Thorning(int feministlevel) {
-        super(" Helle Thorning ", " Wild Feminist ", 4, Gender.APACHE_HELICOPTER);
+        super(" Helle Thorning ", " Top-Feminist ", 4, Gender.APACHE_HELICOPTER);
         this.feministlevel = feministlevel;
     }
     // Helle thornings move.
@@ -19,9 +19,16 @@ public class Helle_Thorning extends Skabning {
     }
 
     // toString metode som kalder navnet på helle og hendes feminist level.
+
+
+    @Override
+    public String look() {
+        return "Du ser på Helle Thorning, lederen af nordens feministforening. ";
+    }
+
     @Override
     public String toString(){
-        return " You have triggered " + this.getNavn() + " Feminst level : " + feministlevel;
+        return " Du har triggered " + this.getNavn() + " Feminst level : " + feministlevel;
     }
 
 
