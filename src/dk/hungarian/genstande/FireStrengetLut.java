@@ -14,7 +14,6 @@ public class FireStrengetLut extends Genstand {
         return "Kunne du tænke dig at se min kæmpe, store, fede.... 4 strenget lut";
     }
 
-    @Override
     public String look() {
         return "En lut, der er blevet lavet af et egern, noget snor og en Lut";
     }
