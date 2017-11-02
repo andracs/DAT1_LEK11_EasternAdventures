@@ -20,5 +20,9 @@ int levetid; //Kan lyse fra 0-500 sekunder.
         return "\nDu har samlet en " + this.getNavn() + " op som har beskrivelsen: \n" + this.getBeskrivelse() +
                 " med en styrke på " + this.getStyrke() + " og den kan lyse i " + this.levetid + " sekunder.";
     }
+
+    public String look(){
+        return this.toString();
+    }
 }
 

@@ -26,6 +26,9 @@ public class Vampyr extends Skabning {
                 "hugtænder på " + this.hugtændersStørrelse + " cm. (WutFace)";
     }
 
+    public String look(){
+        return this.toString();
+}
 
 
 }
