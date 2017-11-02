@@ -12,6 +12,13 @@ public class Laks extends Genstand {
         super(navn, beskrivelse, styrke);
 
     }
+    // Tilføjer en beskrivelse (String) til metoden look fra interface klassen.
+
+    @Override
+    public String look() {
+        String desc = "# En våd slimet og lugtende laks! #"
+        return null;
+    }
 
     public Laks(){
         super("# Laks:", " den er våd, slimet og lugtende! #", 15);
