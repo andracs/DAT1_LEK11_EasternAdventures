@@ -13,13 +13,14 @@ import java.util.Scanner;
 
 public class Main {
 
-    private final static Boolean DEBUG = true; // Vi indbygger en debug mode i vores kode, så vi ikke behøver at spille spillet hver gange, vi tester
+    private final static Boolean DEBUG = false; // Vi indbygger en debug mode i vores kode, så vi ikke behøver at spille spillet hver gange, vi tester
+    private static Kort kortet = new Kort();
+    private static Player player;
 
     /* Main classen starter spillet, og bringer alle de andre klasser i spil. */
     public static void main(String[] args) {
 
-        Kort kortet = new Kort();
-        Player player;
+
 
         if (DEBUG) {
             player = new Player("Hans");
@@ -51,16 +52,27 @@ public class Main {
                     svarTilBruger = "";
                     break;
                 case "se":
-                    //
+                    svarTilBruger = lookAtThings();
                     break;
                 case "slut":
                     keepPlaying = false;
                     svarTilBruger = "Tak for denne gang. Dit spil gemmes (når programmøren har fået implementeret gem funktion.)";
                     break;
                 default:
-                    svarTilBruger = "Kan ikke forstå kommandoen \\\"\" + kommandoFraBruger + \"\\\", desværre.";
+                    svarTilBruger = "Kan ikke forstå kommandoen \"" + kommandoFraBruger + "\", desværre.";
             }
             if (svarTilBruger != "") System.out.println(svarTilBruger);
         }
+    }
+
+    private static String lookAtThings() {
+        String hvadErDerAtSe = "Du ser dig omkring... ";
+        int[] position = player.getPosition();
+        int playerX = position[0];
+        int playerY = position[1];
+        Felt felt = kortet.kort[playerX][playerY];
+        hvadErDerAtSe += felt.beskrivelse + " ";
+        if (felt.skabning != null) hvadErDerAtSe += "Der står " + felt.skabning.getNavn() + " foran dig. " + felt.skabning.getBeskrivelse() + " "; else {hvadErDerAtSe += "Der er ikke skabninger omkring. "; }
+        return hvadErDerAtSe;
     }
 }
