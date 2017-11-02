@@ -2,7 +2,7 @@ package dk.hungarian;
 
 import dk.hungarian.interfaces.Lookable;
 
-public abstract class Genstand implements Lookable {
+public abstract class Genstand  {
     String navn;
     String beskrivelse;
     int styrke;

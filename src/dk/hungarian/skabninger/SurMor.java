@@ -4,6 +4,7 @@ import dk.hungarian.Gender;
 import dk.hungarian.Skabning;
 
 public class SurMor extends Skabning {
+    //Johans arbejde
     //Hvor sur er hun
     int hvorSur;
 
@@ -13,7 +14,17 @@ public class SurMor extends Skabning {
         //Hendes styrke er by default 0, men lig med hendes surhed.
         this.hvorSur = hvorSur;
         this.setStyrke(hvorSur);
+
     }
 
-    //Se fluffybunny_sværd klassen for kode til testklassen.
+    public String look() {
+        return "Du ser på en sur russisk mor. Pas på, jo mere sur hun bliver jo mere skader hun!";
+    }
+
+    @Override
+    public String toString() {
+        return "Du er stødt på " + this.getNavn() + "(" + this.getBeskrivelse() + ") der har en surhedsgrad på: " + this.getStyrke() + ".";
+
+        //Se fluffybunny_sværd klassen for kode til testklassen.
+    }
 }

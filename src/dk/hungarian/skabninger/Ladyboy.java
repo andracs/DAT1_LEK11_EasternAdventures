@@ -19,4 +19,10 @@ public class Ladyboy extends Skabning {  // Klasse der extender "Skabning"
         System.out.println(infoString);
         return infoString; // Returnerer "infoString"
     }
+
+    public String look() {
+        String beskrivelse = "En vanvittig krydsning mellem mand, kvinde og vodkadrikkende russer.";
+        return beskrivelse;
+    }
+    
 }
