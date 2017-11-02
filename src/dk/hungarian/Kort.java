@@ -34,8 +34,8 @@ public class Kort {
         kort[4][4].skabning = normie;
         FireStrengetLut lut = new FireStrengetLut(12);
         kort[4][4].genstand[0] = lut;
-        Scammer scammer = new Scammer(20);
-        kort[5][5].skabning = scammer;
+        // Scammer scammer = new Scammer(20);
+        // kort[5][5].skabning = scammer;
         AK47 ak47 = new AK47("Bingbang", "En maskingevær, lidt slidt.", 100);
         kort[5][5].genstand[0] = ak47;
 
