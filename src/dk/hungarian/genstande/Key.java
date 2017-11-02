@@ -8,11 +8,16 @@ public class Key extends Genstand {
        super(navn, beskrivelse, styrke);
     }
     public Key(){
-        super("Key ", "to open all the doors ", 1);
+        super("Nøgle ", "til at åben alle dører ", 1);
     }
 
 
     public String toString() {
         return this.getNavn() + this.getBeskrivelse();
     }
+
+    public String look() {
+        return toString();
+    }
 }
+
