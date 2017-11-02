@@ -20,4 +20,7 @@ public class Varulv extends Skabning {
     public String toString() {
         return this.getNavn() + this.getBeskrivelse() + this.getStyrke() +" " + getGender();
     }
+    public String look() {
+        return toString();
+    }
 }
