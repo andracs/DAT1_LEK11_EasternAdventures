@@ -11,7 +11,7 @@ public class Skabning  {
     public Skabning()   {
 
     }
-
+    
     public Skabning(String navn, String beskrivelse, int styrke, Gender gender) {
         this.navn = navn;
         this.beskrivelse = beskrivelse;
