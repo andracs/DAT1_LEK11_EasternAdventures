@@ -15,4 +15,9 @@ public class Vodka extends Genstand { // Denne klasse extender den abstrakte kla
         return infoString; // Returnerer "infoString"
     }
 
+    public String look() {
+        String beskrivelse = "En dyr luksus vodka ved navn Royal Dragon, brygget efter gammel russisk opskrift.";
+        return beskrivelse;
+    }
+
 }
