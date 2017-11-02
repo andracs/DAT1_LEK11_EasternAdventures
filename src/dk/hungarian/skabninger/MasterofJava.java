@@ -2,7 +2,9 @@ package dk.hungarian.skabninger;
 
 import dk.hungarian.Gender;
 import dk.hungarian.Skabning;
-//LAvet af Michael (SaneStreet)
+import dk.hungarian.interfaces.Lookable;
+
+//Lavet af Michael (SaneStreet)
 public class MasterofJava extends Skabning {
 
     int coffeeLevel;
@@ -12,7 +14,18 @@ public class MasterofJava extends Skabning {
     }
 
     public MasterofJava(){
-        super("The Master of Java", "He just makes Coffee..", 1, Gender.UKØNNET);
+        super("Java Mesteren", "Han laver bare kaffe..", 1, Gender.UKØNNET);
         this.coffeeLevel = 100;
+    }
+
+    public String look() {
+        return "Du kigger på Mesteren af Java! Han ser meget vred og varm ud.";
+    }
+
+    @Override
+    public String toString() {
+        return "MasterofJava{" +
+                "coffeeLevel=" + coffeeLevel +
+                "} " + super.toString();
     }
 }

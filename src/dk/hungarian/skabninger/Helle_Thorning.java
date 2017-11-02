@@ -21,7 +21,6 @@ public class Helle_Thorning extends Skabning {
     // toString metode som kalder navnet på helle og hendes feminist level.
 
 
-    @Override
     public String look() {
         return "Du ser på Helle Thorning, lederen af nordens feministforening. ";
     }
