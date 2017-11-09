@@ -17,14 +17,12 @@ public class Laks extends Genstand {
 
     public String look() {
         String desc = "# En våd slimet og lugtende laks! #";
-        return null;
+        return desc;
     }
 
     public Laks(){
         super("# Laks:", " den er våd, slimet og lugtende! #", 15);
     }
 
-    public String look() {
-        return null;
-    }
+
 }
