@@ -22,7 +22,8 @@ public class Scammer extends Skabning{
             setStyrke(75);
             System.out.println("You took the bait, and transferred all your money to a scammer, hoping that a Sexy single Russian Lady would come to you");
         }
-        else if (scamXP < 79){
+
+        if (scamXP < 79){
             setStyrke(20);
             System.out.println("You clicked on it, but were smart enough not to enter your credit card number and send money");
         }

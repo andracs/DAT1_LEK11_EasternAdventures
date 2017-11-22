@@ -63,6 +63,10 @@ public class Main {
             }
             if (svarTilBruger != "") System.out.println(svarTilBruger);
         }
+
+        // Test til Leaderboard klassen
+        Leaderboard.add(player);
+
     }
 
     private static String lookAtThings() {
