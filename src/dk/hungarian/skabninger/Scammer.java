@@ -14,18 +14,24 @@ public class Scammer extends Skabning{
 
     }
 
+    // Tilføjer en beskrivelse (String) til metoden look fra interface klassen.
+    public String look() {
+        String desc = "# En Scammer som udgiver sig som en 'Sexy single Russian Lady' som ønsker lidt sexy-time #";
+        return desc;
+    }
+
     public Scammer(int scamXP){
-        super("# Scammer ", "who is imposing as a 'Sexy single Russian Lady' looking for a good time. #", 15, Gender.TRAP);
+        super("# Scammer ", "En Scammer som udgiver sig som en 'Sexy single Russian Lady' som ønsker lidt sexy-time #", 15, Gender.TRAP);
         this.scamXP = scamXP;
 
         if (scamXP >= 80){
             setStyrke(75);
-            System.out.println("You took the bait, and transferred all your money to a scammer, hoping that a Sexy single Russian Lady would come to you");
+            System.out.println("# Du hoppede på den, og overførte alle dine penge til scammeren, i håb om at der kom en 'Sexy single Russian Lady' til dig. #");
         }
 
         if (scamXP < 79){
             setStyrke(20);
-            System.out.println("You clicked on it, but were smart enough not to enter your credit card number and send money");
+            System.out.println("# Du fattede mistanke, og var smart nok til ikke at enter dit kreditkort nummer og sende penge. #");
         }
     }
 }

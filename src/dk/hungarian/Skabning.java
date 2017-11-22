@@ -2,7 +2,7 @@ package dk.hungarian;
 
 import dk.hungarian.interfaces.Lookable;
 
-public class Skabning  {
+public class Skabning implements Lookable {
     private String navn;
     private String beskrivelse;
     private int styrke;
@@ -50,6 +50,4 @@ public class Skabning  {
     public void setStyrke(int styrke) {
         this.styrke = styrke;
     }
-
-
 }
