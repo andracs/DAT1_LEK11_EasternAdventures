@@ -19,7 +19,7 @@ public class NisseFar extends Skabning{
 
     @Override
     public String toString(){
-        return " Du er stødt på " + this.getNavn() + " og han er en" + hvor.Arrig + "%" + " arrig " + Gender + ", så pas på GroedSkeen!";
+        return " Du er stødt på " + this.getNavn() + " og han er en " + hvor.Arrig + "%" + " arrig " + Gender + ", så pas på GroedSkeen!";
     }
 
     public int getHvorArrig() {
