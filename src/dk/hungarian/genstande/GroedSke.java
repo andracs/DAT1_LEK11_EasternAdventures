@@ -20,6 +20,7 @@ public class GroedSke extends Genstand{
 
 
     public String look() {
-        return null;
+        String beskrivelse = "En farlig GrødSke som NisseFar holder alle rotterne væk med!";
+        return beskrivelse;
     }
 }
