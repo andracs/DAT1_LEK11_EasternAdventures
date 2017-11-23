@@ -8,7 +8,7 @@ public class Key extends Genstand {
        super(navn, beskrivelse, styrke);
     }
     public Key(){
-        super("Nøgle ", "til at åben alle dører ", 1);
+        super("Nøgle ", "til at åbne alle døre ", 1);
     }
 
 
