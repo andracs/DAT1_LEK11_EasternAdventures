@@ -29,4 +29,8 @@ public class NisseFar extends Skabning{
     public void setHvorArrig(int hvorArrig) {
         this.hvorArrig = hvorArrig;
     }
+    public String look() {
+        return "Du er stødt på NisseFar der forsvarer sin julegrød med sin GroedSke og 'Smack' du er slået tilbage til Start";
+    }
+
 }
